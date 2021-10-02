@@ -35,6 +35,7 @@ async function main() {
 
     setOutput('number', pr && pr.number.toString() || '');
     setOutput('pr', pr ? JSON.stringify(pr) : '');
+    setOutput('pr_branch', pr ? pr.branch : '');
     setOutput('pr_title', pr ? pr.title : '');
     setOutput('pr_body', pr ? pr.body : '');
     setOutput('pr_url', pr ? pr.html_url : '');
